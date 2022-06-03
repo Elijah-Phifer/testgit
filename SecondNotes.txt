@@ -1,0 +1,151 @@
+CSS
+is not a programming language, it is a STYLING LANGUAGE
+
+it is used for modifiying the apperence of the content of the website
+used for presentation
+
+There are multiple ways to use css - creativity centered
+
+syntax:
+selector: many different types; css styles start with a selector to apply the
+style too (h1)
+
+property-value pairs = defines a property and the value for the property 
+(color: blue;)
+
+Template:
+
+selector {
+	property1: value;
+	property2: value;
+}
+
+Basic example of syntax:
+
+h1 {
+	color: blue;
+}
+^^^ *Sets the text color of all h1 elements to blue* ^^^
+
+CSS Selector:
+
+Main Types:
+
+Element: Applys style to all HTML elements of what ever type to notate
+
+Class: One of the most useful; Lets you select HTML elements based on their class
+atribute; all elements can have atributes attached to them; class atributes are
+used with CSS to distingush elements for specific styling. The class atribute
+can have multiple different classes in the same atribute as long as they're
+seperated by a space.
+
+Inorder to select an element by class:
+
+.class-name {
+	property: value;
+}
+*A period tells CSS that what ever follows is a class name.
+
+Example:
+If you want to make three similar buttons but they all have different colors,
+
+Define the base class:
+
+.btn {
+	padding: 10px;
+	color: white;
+}
+
+and then add seperate styles to the seperate classes that "inherit" from the 
+base class
+
+.btn-1 { backgrouond-color: green; }
+.btn-2 { backgrouond-color: blue; }
+.btn-3 { backgrouond-color: purple; }
+
+Then just add the base button class and the seperate color-specific button classes
+to your HTML button elements
+
+*In HTML*
+
+<button class="btn btn-1">
+	button 1
+</button>
+<button class="btn btn-2">
+	button 2
+</button>
+<button class="btn btn-3">
+	button 3
+</button>
+
+^^*In HTML*^^
+
+ID: similar to class (it is and HTML atribute) but there can only be one ID
+in an element and it should be unique across the entire webpage
+
+*In HTML*
+
+<h1 id="main-header">
+	Title
+</h1>
+^^*In HTML*^^
+
+*In CSS*
+Template:
+
+#id {
+	property: value;
+}
+^^*In CSS*^^
+
+CSS selector combinations
+
+.selector-1.selector-2 {
+	property: value;
+}
+
+Says that the item must have both selectors in order to inherit a style
+
+.ancestor .child {
+	property: value:
+}
+
+*notice the space between ancestor and child*
+
+Example:
+div p {
+	color: red;
+}
+
+*Selects all p-tags in the div sections*
+
+.big, .large {
+	font-size: 200%
+}
+
+*allows you to use the same property-value style for different atributes*
+
+* {
+	font-family: Arial;
+}
+
+*selects all elements on entire web page*
+
+How to load CSS into HTML:
+
+Inline style: CSS writen in an HTML element *worst*
+Style element: Using the HTML element <style></style> and writing the css in the 
+element block
+
+External CSS: Having a seperate CSS file and link to it from the HTML; using the
+empty <link> element and a rel(relationship) atribute to define the relationship 
+(in this case stylesheet) of the link to the HTML. The link is put afterwords
+in a href(Hypertext Reference) atribute
+
+Example:
+
+<head>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+
