@@ -1,0 +1,35 @@
+HTML CSS and JavaScript are files and they determine the websites looks and functions (Along with Img and videos)
+Server - a sever is a computer hooked up to the internet that has all the files needed to run a website
+	they send the files to the web browser
+
+Web Browser - commonly refered to as the client. Program that knows how to properly render the files sent by the server
+
+HTML - Hyper text Markup Language
+	The fondation of every website
+		includes the text titles links and images that contain a website
+	if it were a house it would be the foundation walls and window
+
+CSS - Cascading Style Sheets
+ 	Defines the asthetic look
+	if it were a house it would be the paint color and window curtains
+
+Javascript
+	if you want to have funtionallity, you need javascrpit
+	it would be the door knobs in the house
+
+HTTP - Hyper Text Transfer Protocol
+	like a conversation with a friend
+		Browser asks the server for an html file and the server responds. The browser looks and 
+		then ask the serever for any other information it needs and the sever responds.
+
+Domain Name Resolution 
+
+Every website has a domain name
+servers see IP Adresses
+
+Browsers convert domain names to IP adresses to access a server.
+
+
+
+
+
